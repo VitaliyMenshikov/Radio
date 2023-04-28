@@ -19,6 +19,20 @@ public class Radio {
         }
     }
 
+    public void volumeUp() {
+        if (currentVolume != 10) {
+            currentVolume++;
+            return;
+        }
+    }
+
+    public void volumeDown() {
+        if (currentVolume != 0) {
+            currentVolume--;
+            return;
+        }
+    }
+
     public int getCurrentStation() {
         return currentStation;
     }
